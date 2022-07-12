@@ -39,5 +39,14 @@ namespace ProgrammerenIntroExamen
             string cursus = Console.ReadLine();
             Console.WriteLine($"Maak een map als volgt: /home/{naam.Substring(0,3).ToUpper()}/{cursus}");
         }
+
+        public static void Lotto()
+        {
+            Console.WriteLine("Wat zijn je cijfers (tussen 01 en 45)?");
+            string cijfers = Console.ReadLine();
+            Console.WriteLine("Je cijfers zijn:");
+            Console.WriteLine($"{cijfers.Substring(0,8).Replace(",", "|")}");
+            Console.WriteLine($"{cijfers.Substring(9,8).Replace(",","|")}");
+        }
     }
 }
