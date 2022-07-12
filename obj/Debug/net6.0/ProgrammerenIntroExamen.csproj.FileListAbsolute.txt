@@ -1,0 +1,15 @@
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\bin\Debug\net6.0\ProgrammerenIntroExamen.exe
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\bin\Debug\net6.0\ProgrammerenIntroExamen.deps.json
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\bin\Debug\net6.0\ProgrammerenIntroExamen.runtimeconfig.json
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\bin\Debug\net6.0\ProgrammerenIntroExamen.dll
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\bin\Debug\net6.0\ref\ProgrammerenIntroExamen.dll
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\bin\Debug\net6.0\ProgrammerenIntroExamen.pdb
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\obj\Debug\net6.0\ProgrammerenIntroExamen.csproj.AssemblyReference.cache
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\obj\Debug\net6.0\ProgrammerenIntroExamen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\obj\Debug\net6.0\ProgrammerenIntroExamen.AssemblyInfoInputs.cache
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\obj\Debug\net6.0\ProgrammerenIntroExamen.AssemblyInfo.cs
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\obj\Debug\net6.0\ProgrammerenIntroExamen.csproj.CoreCompileInputs.cache
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\obj\Debug\net6.0\ProgrammerenIntroExamen.dll
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\obj\Debug\net6.0\ref\ProgrammerenIntroExamen.dll
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\obj\Debug\net6.0\ProgrammerenIntroExamen.pdb
+C:\Users\trabz\Documents\Examenvoorbereiding\Programmeren Intro\ProgrammerenIntroExamen\obj\Debug\net6.0\ProgrammerenIntroExamen.genruntimeconfig.cache
