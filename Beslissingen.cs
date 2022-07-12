@@ -26,5 +26,19 @@ namespace ProgrammerenIntroExamen
                 Console.WriteLine($"De prijs voor {aantalSchoenen} paar schoenen is {bedrag}");
             }
         }
+
+        public static void EvenOneven()
+        {
+            Console.WriteLine("Geef een getal:");
+            int getal = Convert.ToInt32(Console.ReadLine());
+            if (getal%2 == 0)
+            {
+                Console.WriteLine($"Het getal {getal} is even");
+            }
+            else
+            {
+                Console.WriteLine($"Het getal {getal} is oneven");
+            }
+        }
     }
 }
