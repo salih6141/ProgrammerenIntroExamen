@@ -59,5 +59,36 @@ namespace ProgrammerenIntroExamen
                 Console.WriteLine($"Het getal is nul.");
             }
         }
+
+        public static void BMIBerekenaar()
+        {
+            Console.WriteLine("Wat is je gewicht?");
+            double gewicht = Convert.ToDouble(Console.ReadLine());
+        
+            Console.WriteLine("Wat is je lengte in meter?");
+            double lengte = Convert.ToDouble(Console.ReadLine());
+            double bmi = Math.Round(gewicht/Math.Pow(lengte,2),2);
+
+            if (bmi < 18.5)
+            {
+                Console.WriteLine($"Je hebt een bmi van {bmi}. Je bent ondergewicht.");
+            }
+            else if (bmi >= 18.5 && bmi < 25)
+            {
+                Console.WriteLine($"Je hebt een bmi van {bmi}. Je hebt een normaal gewicht.");
+            }
+            else if (bmi >= 25 && bmi < 30)
+            {
+                Console.WriteLine($"Je hebt een bmi van {bmi}. Je bent overgewicht.");
+            }
+            else if (bmi >= 30 && bmi < 40)
+            {
+                Console.WriteLine($"Je hebt een bmi van {bmi}. Je bent zwaarlijvig.");
+            }
+            else if (bmi >= 40) 
+            {
+                Console.WriteLine($"Je hebt een bmi van {bmi}. Je hebt ernstige obesitas.");
+            }
+        }
     }
 }
