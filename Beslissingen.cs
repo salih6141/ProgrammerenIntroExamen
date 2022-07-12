@@ -40,5 +40,24 @@ namespace ProgrammerenIntroExamen
                 Console.WriteLine($"Het getal {getal} is oneven");
             }
         }
+
+        public static void PositiefNegatiefNul()
+        {
+            int getal = 0;
+            Console.WriteLine("Geef een getal: ");
+            getal = Convert.ToInt32(Console.ReadLine());
+            if (getal > 0)
+            {
+                Console.WriteLine($"Het getal {getal} is positief.");
+            }
+            else if (getal < 0)
+            {
+                Console.WriteLine($"Het getal {getal} is negatief.");
+            }
+            else if (getal == 0)
+            {
+                Console.WriteLine($"Het getal is nul.");
+            }
+        }
     }
 }
