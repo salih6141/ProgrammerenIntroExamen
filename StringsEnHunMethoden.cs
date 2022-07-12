@@ -24,6 +24,11 @@ namespace ProgrammerenIntroExamen
             Console.WriteLine($"Het bedrag {bedrag} met {btwPercentage}% btw bedraagt {bedragInclusiefBtw}");
         }
 
-
+        public static void leetSpeak()
+        {
+            Console.WriteLine("Geef je tekst in");
+            string userInput = Console.ReadLine();
+            Console.WriteLine(userInput.Replace("a","@"));
+        }
     }
 }
