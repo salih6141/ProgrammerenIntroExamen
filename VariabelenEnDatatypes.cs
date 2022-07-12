@@ -38,5 +38,14 @@ namespace ProgrammerenIntroExamen
             double verbruik = (100*(aantalLiterVoor - aantalLiterNa)/ (kmNa - kmVoor));
             Console.WriteLine("Het verbruik van de auto is: " + Math.Round(verbruik,2));
         }
+
+        public static void Gemiddelde()
+        {
+            int getal1 = 18;
+            int getal2 = 11;
+            int getal3 = 8;
+            int gemiddelde = (getal1 + getal2 + getal3)/3;
+            Console.WriteLine(gemiddelde);
+        }
     }
 }

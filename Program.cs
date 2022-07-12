@@ -7,7 +7,12 @@ namespace ProgrammerenIntroExamen
         static void Main(string[] args)
         {
             // VariabelenEnDatatypes.Optellen();
-            VariabelenEnDatatypes.VerbruikWagen();
+            // VariabelenEnDatatypes.VerbruikWagen();
+            // StringsEnHunMethoden.StringsEnHunHoofdletters();
+            // StringsEnHunMethoden.BerekenBtw();
+            // StringsEnHunMethoden.leetSpeak();
+            // StringsEnHunMethoden.Instructies();
+            StringsEnHunMethoden.Lotto();
         }
     }
 }
