@@ -24,11 +24,20 @@ namespace ProgrammerenIntroExamen
             Console.WriteLine($"Het bedrag {bedrag} met {btwPercentage}% btw bedraagt {bedragInclusiefBtw}");
         }
 
-        public static void leetSpeak()
+        public static void LeetSpeak()
         {
             Console.WriteLine("Geef je tekst in");
             string userInput = Console.ReadLine();
             Console.WriteLine(userInput.Replace("a","@"));
+        }
+
+        public static void Instructies()
+        {
+            Console.WriteLine("Wat is je naam?");
+            string naam = Console.ReadLine();
+            Console.WriteLine("Wat is de naam van de cursus?");
+            string cursus = Console.ReadLine();
+            Console.WriteLine($"Maak een map als volgt: /home/{naam.Substring(0,3).ToUpper()}/{cursus}");
         }
     }
 }
