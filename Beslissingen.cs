@@ -7,6 +7,36 @@ namespace ProgrammerenIntroExamen
 {
     public class Beslissingen
     {
+        public static void KeuzeMenu()
+        {
+            Console.WriteLine("Kies een oefening.");
+            Console.WriteLine("1 - Schoenenverkoper");
+            Console.WriteLine("2 - EvenOneven");
+            Console.WriteLine("3 - PositiefNegatiefNul");
+            Console.WriteLine("4 - BMIBerekenaar");
+            int keuze = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+
+            switch (keuze)
+            {
+                case 1:
+                    Schoenenverkoper();
+                    break;
+                case 2:
+                    EvenOneven();
+                    break;
+                case 3:
+                    PositiefNegatiefNul();
+                    break;
+                case 4:
+                    BMIBerekenaar();
+                    break;
+                default:
+                    Console.WriteLine("Ongeldige keuze!");
+                    break;
+            }
+        }
+
         public static void Schoenenverkoper()
         {
             double prijsSchoen = 50.00;
