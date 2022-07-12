@@ -11,9 +11,11 @@ namespace ProgrammerenIntroExamen
         {
             double prijsSchoen = 50.00;
             double bedrag = 00.00;
+            Console.WriteLine("Heb je een klantenkaart?(ja of nee)");
+            string klantenkaart = Console.ReadLine();
             Console.WriteLine("Hoeveel paar schoenen wil je kopen?");
             int aantalSchoenen = Convert.ToInt32(Console.ReadLine());
-            if (aantalSchoenen > 1)
+            if (aantalSchoenen > 1 && klantenkaart == "ja")
             {
                 bedrag = Math.Round((aantalSchoenen * prijsSchoen) * 0.9 , 2);
                 Console.WriteLine($"De prijs voor {aantalSchoenen} paar schoenen is {bedrag}");
