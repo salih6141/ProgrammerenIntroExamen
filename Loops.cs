@@ -58,6 +58,8 @@ namespace ProgrammerenIntroExamen
                 aantalGetallen++;
             }
             Console.WriteLine($"Het gemiddelde: {Math.Round(somGetallen/aantalGetallen,2)}");
+            Console.WriteLine(somGetallen);
+            Console.WriteLine(aantalGetallen);
         }
     }
 }
