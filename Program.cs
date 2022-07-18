@@ -16,7 +16,10 @@ namespace ProgrammerenIntroExamen
             // Beslissingen.Schoenenverkoper();
             // Beslissingen.EvenOneven();
             // Beslissingen.BMIBerekenaar();
-            HoofdMenu();
+            // HoofdMenu();
+            // Loops.CountDown();
+            // Loops.Wachtwoord();
+            Loops.Gemiddelde();
         }
 
         public static void HoofdMenu()
