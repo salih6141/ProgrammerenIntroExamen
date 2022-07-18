@@ -135,5 +135,27 @@ namespace ProgrammerenIntroExamen
                 Console.WriteLine($"{i} x {getal} is {i*getal}");
             }
         }
+
+        public static void PriemChecker()
+        {
+            Console.Write("Geef een getal in: ");
+            int getal = Convert.ToInt32(Console.ReadLine());
+            int aantalDelers = 0;
+            for (int i = 2; i <= getal; i++)
+            {
+                if (getal%i == 0)
+                {
+                    aantalDelers++;
+                }
+            }
+            if (aantalDelers == 1)
+            {
+                Console.WriteLine($"{getal} is WEL een priemgetal.");
+            }
+            else
+            {
+                Console.WriteLine($"{getal} is GEEN priemgetal.");
+            }
+        }
     }
 }
