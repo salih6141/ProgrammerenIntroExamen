@@ -59,5 +59,30 @@ namespace ProgrammerenIntroExamen
             }
             Console.WriteLine($"Het gemiddelde: {Math.Round(somGetallen/aantalGetallen,2)}");
         }
+
+        public static void Feestje()
+        {
+            bool volzet = false;
+            string check = "";
+            string aanwezigen = "";
+            int aantal = 0;
+            while (volzet == false)
+            {
+                Console.Write("Wil je een volgende persoon inschrijven? (ja of nee)");
+                check = Console.ReadLine();
+                if (check == "ja")
+                {
+                    aantal++;
+                    Console.Write("Geef de naam: ");
+                    aanwezigen += " " + Console.ReadLine();
+                }
+                else if (check == "nee")
+                {
+                    volzet = true;
+                    Console.WriteLine($"Lijst van aanwezigen: {aanwezigen}");
+                    Console.WriteLine($"Er zijn {aantal} personen aanwezig.");
+                }
+            }
+        }
     }
 }
