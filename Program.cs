@@ -19,7 +19,12 @@ namespace ProgrammerenIntroExamen
             // HoofdMenu();
             // Loops.CountDown();
             // Loops.Wachtwoord();
-            Loops.Gemiddelde();
+            // Loops.Gemiddelde();
+            // Loops.Feestje();
+            // Loops.RNATranscriptie();
+            // Loops.VanMin100Tot100();
+            // Loops.EenTafel();
+            Loops.PriemChecker();
         }
 
         public static void HoofdMenu()
