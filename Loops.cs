@@ -44,5 +44,20 @@ namespace ProgrammerenIntroExamen
             Console.WriteLine("Wachtwoord is correct!");
             Console.WriteLine($"aantal pogingen: {aantal}");
         }
+
+        public static void Gemiddelde()
+        {
+            int aantalGetallen = 0;
+            double somGetallen = 0;
+            double getal = 1;
+            while (getal != 0)
+            {
+                Console.Write("Voer het volgende getal in: ");
+                getal = Convert.ToDouble(Console.ReadLine());
+                somGetallen += getal;
+                aantalGetallen++;
+            }
+            Console.WriteLine($"Het gemiddelde: {Math.Round(somGetallen/aantalGetallen,2)}");
+        }
     }
 }
