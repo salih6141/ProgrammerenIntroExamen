@@ -120,7 +120,7 @@ namespace ProgrammerenIntroExamen
 
         public static void VanMin100Tot100()
         {
-            for (int i = -100; i <= 100; i++)
+            for (int i = -100; i <= 100; i = i + 2)
             {
                 Console.WriteLine(i);
             }
