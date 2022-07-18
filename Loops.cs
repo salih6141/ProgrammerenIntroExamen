@@ -29,6 +29,15 @@ namespace ProgrammerenIntroExamen
                 Console.Clear();
             }
         }
-    }
 
+        public static void Wachtwoord()
+        {
+            string wachtwoord = "";
+            do
+            {
+
+            }
+            while (wachtwoord == "AP");
+        }
+    }
 }
