@@ -47,7 +47,7 @@ namespace ProgrammerenIntroExamen
 
         public static void Gemiddelde()
         {
-            int aantalGetallen = 0;
+            int aantalGetallen = -1;
             double somGetallen = 0;
             double getal = 1;
             while (getal != 0)
