@@ -117,5 +117,13 @@ namespace ProgrammerenIntroExamen
             } while (invoer != "stop");
             Console.WriteLine($"De RNA string is : {RNA}");
         }
+
+        public static void VanMin100Tot100()
+        {
+            for (int i = -100; i <= 100; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
     }
 }
