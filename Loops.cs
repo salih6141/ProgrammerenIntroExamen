@@ -33,11 +33,16 @@ namespace ProgrammerenIntroExamen
         public static void Wachtwoord()
         {
             string wachtwoord = "";
-            do
+            int aantal = 0;
+            string psw = "AP";
+            while (wachtwoord != psw)
             {
-
+                Console.Write("Voer het wachtwoord in: ");
+                wachtwoord = Console.ReadLine();
+                aantal++;
             }
-            while (wachtwoord == "AP");
+            Console.WriteLine("Wachtwoord is correct!");
+            Console.WriteLine($"aantal pogingen: {aantal}");
         }
     }
 }
