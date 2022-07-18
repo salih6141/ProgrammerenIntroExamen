@@ -24,6 +24,8 @@ namespace ProgrammerenIntroExamen
             else
             {
                 Console.WriteLine("Getal mag niet onder de nul zijn! start de programma opnieuw.");
+                int milliseconds = 2000;
+                Thread.Sleep(milliseconds);
                 Console.Clear();
             }
         }
