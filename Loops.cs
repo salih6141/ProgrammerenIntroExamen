@@ -125,5 +125,15 @@ namespace ProgrammerenIntroExamen
                 Console.WriteLine(i);
             }
         }
+
+        public static void EenTafel()
+        {
+            Console.WriteLine("Van welk getal wil je de tafel van vermenigvuldiging zien?");
+            int getal = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine($"{i} x {getal} is {i*getal}");
+            }
+        }
     }
 }
