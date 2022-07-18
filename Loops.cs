@@ -84,5 +84,38 @@ namespace ProgrammerenIntroExamen
                 }
             }
         }
+
+        public static void RNATranscriptie()
+        {
+            string invoer = "";
+            string DNA = "";
+            string RNA = "";
+            Console.WriteLine("Voer de letters 'G' 'T' 'C' of 'A' in.");
+            do
+            {
+                Console.WriteLine("Voer de letter in (stoppen met 'stop'");
+                invoer = Console.ReadLine();
+                switch(invoer)
+                {
+                    case "G":
+                        DNA += "G";
+                        RNA += "C";
+                        break;
+                    case "C": 
+                        DNA += "C";
+                        RNA += "G";
+                        break;
+                    case "T":
+                        DNA += "T";
+                        RNA += "A";
+                        break;
+                    case "A":
+                        DNA += "A";
+                        RNA += "U";
+                    break;
+                }
+            } while (invoer != "stop");
+            Console.WriteLine($"De RNA string is : {RNA}");
+        }
     }
 }
