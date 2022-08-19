@@ -63,5 +63,41 @@ namespace ProgrammerenIntroExamen
             }
             Console.ReadKey();
         }
+
+        public static void Boodschappenlijst() {
+            Console.WriteLine("We gaan de boodschappenlijst samenstellen. Hoeveel items wil je opschrijven.");
+            
+            int aantal = Convert.ToInt32(Console.ReadLine());
+            string[] items = new string[aantal];
+
+            for (int i = 0; i < aantal; i++) {
+                Console.WriteLine($"Wat is de item {i + 1} op je lijst?");
+                items[i] = Console.ReadLine();
+            }
+
+            Array.Sort(items);
+            Console.WriteLine("Dit is je gesorteerde lijst");
+
+            for (int i = 0; i < items.Length; i++) {
+                Console.WriteLine($"{i+1}: {items[i]}");
+            }
+
+            Console.WriteLine("Op naar de winkel?");
+            string nogWinkelen = "ja";
+
+            while (nogWinkelen.ToUpper() == "JA") {
+                Console.WriteLine("Welk item heb je gekocht?");
+                string item = Console.ReadLine();
+
+                if (Array.BinarySearch(items,item)<0){
+                    Console.WriteLine("Dit iten bevindt zich niet op de lijst!");
+                } else {
+                    items[Array.IndexOf(items,item)] = "gekocht";
+                }
+
+                Console.WriteLine("NOg winkelen? ja of nee?");
+                nogWinkelen = Console.ReadLine();
+            }
+        }
     }
 }

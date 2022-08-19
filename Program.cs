@@ -24,7 +24,9 @@ namespace ProgrammerenIntroExamen
             // Loops.RNATranscriptie();
             // Loops.VanMin100Tot100();
             // Loops.EenTafel();
-            Loops.PriemChecker();
+            // Loops.PriemChecker();
+            // Arrays.Arrayoefening();
+            Arrays.ArrayOefener();
         }
 
         public static void HoofdMenu()
