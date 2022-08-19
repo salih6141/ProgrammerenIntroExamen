@@ -123,5 +123,153 @@ namespace ProgrammerenIntroExamen
             Console.WriteLine($"Gemiddelde prijs: {cadeautjes.Average():F1} euro.");
             Console.ReadKey();
         }
+
+        public static void Lotto(){
+            int[] lottoFormulier = new int[6];
+
+            Console.WriteLine("Geef je lotto getallen (getallen moeten tussen 1 en 42 liggen).");
+            int i;
+
+            for (i = 0; i < lottoFormulier.Length; i++){
+                Console.WriteLine("Geef lotto nummer " + (i + 1).ToString());
+                lottoFormulier[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int[] lottoTrekking = new int[6];
+
+            for (i = 0; i < lottoTrekking.Length; i++){
+                lottoTrekking[i] = 0;
+            }
+            Random random = new Random();
+            int lottoGetal;
+
+            for (i = 0; i < lottoTrekking.Length; i++) {
+                do
+                {
+                    lottoGetal = random.Next(42) + 1;
+                }
+                while (Array.IndexOf(lottoTrekking, lottoGetal) >= 0);
+                lottoTrekking[i] = lottoGetal;
+            }
+
+            int aantalJuisteGetallen = 0;
+            for (i = 0; i <= 5; i++){
+                if (Array.IndexOf(lottoTrekking, lottoFormulier[i]) >= 0){
+                    aantalJuisteGetallen += 1;
+                }
+            }
+
+            int gewonnenBedrag = 0;
+            if (aantalJuisteGetallen == 3){
+                gewonnenBedrag = 10;
+            }
+            else if (aantalJuisteGetallen == 4){
+                gewonnenBedrag = 1000;
+            }
+            else if (aantalJuisteGetallen == 5){
+                gewonnenBedrag = 100000;
+            }
+            else if (aantalJuisteGetallen == 6){
+                gewonnenBedrag = 100000000;
+            }
+            else{
+
+            }
+
+            Array.Sort(lottoFormulier);
+            Array.Sort(lottoTrekking);
+
+            Console.WriteLine("Je gekowen cijfers zijn:");
+            for (i = 0; i < lottoFormulier.Length; i++){
+                Console.Write($"{lottoFormulier[i]} ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("De trekking cijfers zijn:");
+            for (i = 0; i < lottoTrekking.Length; i++){
+                Console.Write($"{lottoTrekking[i]} ");
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Je hebt {gewonnenBedrag} Euro gewonnen.");
+            Console.ReadKey();
+        }
+
+        public static void IntegerIndexOf(){
+            int[] getallen = new int[10];
+            int i;
+            int index;
+
+            Console.WriteLine("Geef 10 willekeurige gehele getallen");
+            for (i = 0; i < getallen.Length; i++){
+                getallen[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("Welke geheel getal wil je zoeken?");
+            int zoekWaarde = Convert.ToInt32(Console.ReadLine());
+
+            i=0;
+            index = -1;
+
+            do{
+                if (getallen[i] == zoekWaarde){
+                    index = i;
+                }
+                i++
+            } while (i < getallen.Length && index == -1);
+            if (index == -1){
+                Console.WriteLine($"Je zocht {zoekWaarde}, jammer die is niet gevonden.");
+            } else {
+                Console.WriteLine($"Je zocht {zoekWaarde}, die is gevonden op index {index}.");
+            }
+            Console.ReadKey();
+        }
+
+        public static void StringBinarySearch() {
+            string[] autoMerken = {
+                "Citroen",
+                "Mercedes",
+                "Peugeot",
+                "BMW",
+                "Toyota",
+                "AstonMartin",
+                "Ferrari",
+                "Opel",
+                "Lexus",
+                "Wartburg"
+            };
+
+            int beginIndex = 0;
+            int eindIndex = autoMerken.Length - 1;
+            int middenIndex;
+            int index = -1;
+
+            Console.WriteLine("Welke automerk wil je zoeken?");
+            string zoekWaarde = Console.ReadLine();
+
+            Array.Sort(autoMerken);
+            while (beginIndex <= eindIndex)
+            {
+                middenIndex = beginIndex + (eindIndex - beginIndex) / 2;
+                if (autoMerken[middenIndex].CompareTo(zoekWaarde) < 0){
+                    beginIndex = middenIndex + 1;
+                }
+                else if (autoMerken[middenIndex].CompareTo(zoekWaarde) > 0)
+                {
+                    eindIndex = middenIndex - 1;
+                }
+                else
+                {
+                    index = middenIndex;
+                    beginIndex = eindIndex + 1;
+                }
+            }
+             if (index == -1)
+            {
+                Console.WriteLine($"Je zocht {zoekWaarde}, jammer die is niet gevonden");
+            }
+            else
+            {
+                Console.WriteLine($"Je zocht {zoekWaarde}, die is gevonden op index {index}");
+            }
+            Console.ReadKey();
+        }
     }
 }
