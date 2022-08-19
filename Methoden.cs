@@ -24,5 +24,6 @@ namespace ProgrammerenIntroExamen
                 Console.WriteLine($"Het grootste getal tussen {getal1} en {getal2} is {getal2}.");
             }
         }
+
     }
 }
