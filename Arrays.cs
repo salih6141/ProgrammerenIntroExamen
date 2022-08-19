@@ -99,5 +99,29 @@ namespace ProgrammerenIntroExamen
                 nogWinkelen = Console.ReadLine();
             }
         }
+
+        public static void Kerstinkopen() {
+            Console.WriteLine("Wat is het budget voor je kerstinkopen?");
+            double budget = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Hoeveel cadeautjes wil je kopen?");
+            int aantal = Convert.ToInt32(Console.ReadLine());
+
+            double[] cadeautjes = new double[aantal];
+
+            for (int i = 0; i < aantal; i++) {
+                Console.WriteLine($"Prijs van cadeau {i + 1}?");
+                cadeautjes[i] = Convert.ToDouble(Console.ReadLine());
+                if (cadeautjes.Sum() > budget){
+                    Console.WriteLine($"Je bent al {(cadeautjes.Sum() - budget):F1} euro over het budget!");
+                }
+            }
+
+            Console.WriteLine("Info over je aankopen :");
+            Console.WriteLine($"Toaal bedrag: {cadeautjes.Sum():F1} euro.");
+            Console.WriteLine($"Duurste cadeau: {cadeautjes.Max():F1} euro.");
+            Console.WriteLine($"Goedkoopste cadeau: {cadeautjes.Min():F1} euro.");
+            Console.WriteLine($"Gemiddelde prijs: {cadeautjes.Average():F1} euro.");
+            Console.ReadKey();
+        }
     }
 }
